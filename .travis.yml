@@ -1,0 +1,30 @@
+language: go
+
+go:
+  - 1.12.x
+
+# Note: If you're working inside $GOPATH/src, go modules are disabled by default and can be enabled by setting GO111MODULE=on.
+env:
+  GO111MODULE=on
+
+install:
+  - go mod download
+
+script:
+  - go test -v ./...
+  - GOOS=windows GOARCH=amd64 go build -o music-get.exe
+  - GOOS=linux GOARCH=amd64 go build -o music-get
+
+before_deploy:
+  - zip music-get_windows_amd64.zip music-get.exe README.md
+  - zip music-get_linux_amd64.zip music-get README.md
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file:
+    - music-get_windows_amd64.zip
+    - music-get_linux_amd64.zip
+  skip_cleanup: true
+  on:
+    tags: true
