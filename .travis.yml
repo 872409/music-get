@@ -21,7 +21,8 @@ before_deploy:
 
 deploy:
   provider: releases
-  api_key: $GITHUB_TOKEN
+  api_key:
+    secure: IScGxmZ+b6J2awD7XzcVgEQEEmXrFksVbBQOQBrnJMCj8UnC5pIolQgzcueJfmpNLfewzwWh6PJAaQUYt9tAwfN/yzmhaaHcdieurCEQ1nA9CLn7/AWWrUxXvjMVgyHuSMTn+9QLslR0day3a8mhx5za6uAFF+ZDt4Vcqjl+FOuiS1+Zw7E99Z2i9HAxJJTEWVTJfezIwYyqcwvZRWoQ+f499WywIg3NZdPPKmuDs0rL4BfcQkndJhHSrLfvMDYYQLyBkoLVmM0QL+y7rNTmRfjBTWcmUHyj/4v0fsixAXGJMEanjGNAlrQBYlzTyEPGqK1AeU1s5uwqVTccBpOlTsrSh466g+vT7PyASh4t1/fA+wJsZ0sQmeyOyx9ZyzaCjh2yaF8Od4k/bhHD89Zl7YzHu4HF6xc4N1uPB8n8QvEclgZ9SdsFtwPzQk4P6doDBjlEh27vIvrvYaif91qfOSQ+L9wV41LbJdI76qRH1nhizYYQUE7pymX+EO8no0Vh9ZjfINDDJ9ax8UgsNOR4shebnhfiOOmq4qTD/iTd927iYLBKtkcTW33EgV0qL5hYz1/T6Q2spjhSGw/UCTm4z7DiJqZvV3GQm+ASLrdfiCpepSRy56H3u5DU47TcII1ceXQp7iZnZGtZToBAcntAHHYLWaIjvMwq1MEb8gB5wOs=
   file:
     - music-get_windows_amd64.zip
     - music-get_linux_amd64.zip
