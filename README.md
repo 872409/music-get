@@ -1,11 +1,17 @@
 # Music-Get
 
-[![Build Status](https://travis-ci.org/winterssy/music-get.svg?branch=master)](https://travis-ci.org/winterssy/music-get)
-[![License GPL-3.0](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://github.com/winterssy/music-get/blob/master/LICENSE)
+![](https://travis-ci.org/winterssy/music-get.svg?branch=master)
+![](https://img.shields.io/badge/golang-1.12-blue.svg)
+![](https://img.shields.io/github/release/winterssy/music-get.svg)
+![](https://img.shields.io/github/license/winterssy/music-get.svg)
 
 [网易云音乐](https://music.163.com) | [QQ音乐](https://y.qq.com) 下载助手，支持一键下载单曲/专辑/歌单以及歌手热门歌曲，并自动更新音乐标签。
 
 >本项目仅供学习研究使用。如侵犯你的权益，请 [联系作者](mailto:winterssy@foxmail.com) 删除。
+
+## 下载安装
+
+你可以前往 [Releases](/releases) 下载程序的最新版本，或者克隆项目源码自行编译。
 
 ## 如何使用？
 
