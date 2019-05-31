@@ -1,11 +1,13 @@
 # Music-Get
 
-![](https://travis-ci.org/winterssy/music-get.svg?branch=master)
-![](https://img.shields.io/badge/golang-1.12-blue.svg)
-![](https://img.shields.io/github/release/winterssy/music-get.svg)
-![](https://img.shields.io/github/license/winterssy/music-get.svg)
+[![Build Status](https://travis-ci.org/winterssy/music-get.svg?branch=master)](https://travis-ci.org/winterssy/music-get)
+[![golang.org](https://img.shields.io/badge/golang-1.12-blue.svg)](https://golang.org)
+[![Latest Release](https://img.shields.io/github/release/winterssy/music-get.svg)](https://github.com/winterssy/music-get/releases)
+[![License GPL-3.0](https://img.shields.io/github/license/winterssy/music-get.svg)](/LICENSE)
 
 [网易云音乐](https://music.163.com) | [QQ音乐](https://y.qq.com) 下载助手，支持一键下载单曲/专辑/歌单以及歌手热门歌曲，并自动更新音乐标签。
+
+![music-get](/screenshots/music-get.gif)
 
 >本项目仅供学习研究使用。如侵犯你的权益，请 [联系作者](mailto:winterssy@foxmail.com) 删除。
 
@@ -62,6 +64,12 @@ $ music-get https://y.qq.com/n/yqq/singer/000Sp0Bz4JXH0o.html
 - 自动更新音乐标签（效果预览）：
 
 ![](/screenshots/tag-updated.png)
+
+## 致谢
+
+- 网易云音乐 Node.js API：[Binaryify/NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
+
+- [@mrdong916](https://github.com/mrdong916) 提供的QQ音乐接口（用于支持320kbps高音质下载）：[MessAPI](https://mrdong916.github.io/mess-api-doc/)
 
 ## License
 
