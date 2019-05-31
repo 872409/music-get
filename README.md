@@ -49,6 +49,20 @@ $ music-get https://y.qq.com/n/yqq/singer/000Sp0Bz4JXH0o.html
 
 **注：** 命令选项必须先于其它命令行参数输入。
 
+## 运行截图
+
+- 单任务下载：
+
+![](/screenshots/single-download.png)
+
+- 多任务同时下载：
+
+![](/screenshots/concurrent-download.png)
+
+- 自动更新音乐标签（效果预览）：
+
+![](/screenshots/tag-updated.png)
+
 ## License
 
 GPLv3.
