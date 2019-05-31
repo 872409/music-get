@@ -11,7 +11,7 @@
 
 ## 下载安装
 
-你可以前往 [Releases](/releases) 下载程序的最新版本，或者克隆项目源码自行编译。
+你可以前往 [Releases](https://github.com/winterssy/music-get/releases) 标签下载程序的最新版本，或者克隆项目源码自行编译。
 
 ## 如何使用？
 
