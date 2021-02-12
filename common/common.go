@@ -115,6 +115,7 @@ func (m *MP3) SingleDownload() error {
 	defer resp.Body.Close()
 
 	fPath := filepath.Join(m.SavePath, m.FileName)
+	os.Chmod(m.SavePath, 0777)
 	f, err := os.Create(fPath)
 	if err != nil {
 		return err
