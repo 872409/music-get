@@ -15,7 +15,7 @@ func SingleDownload(mp3List []*common.MP3) {
 	wg := &sync.WaitGroup{}
 	for _, m := range mp3List {
 		if !m.Playable {
-			logger.Info.Printf("Ignore no coypright music: %s", m.Tag.Title)
+			logger.Info.Printf("Ignore no copyright music: %s", m.Tag.Title)
 			ignore++
 			continue
 		}

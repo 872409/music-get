@@ -153,7 +153,7 @@ func (m *MP3) ConcurrentDownload(taskList chan DownloadTask, taskQueue chan stru
 	}()
 
 	if !m.Playable {
-		logger.Info.Printf("Ignore no coypright music: %s", m.Tag.Title)
+		logger.Info.Printf("Ignore no copyright music: %s", m.Tag.Title)
 		task.Status = DownloadNoCopyrightError
 		return
 	}
