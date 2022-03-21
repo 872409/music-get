@@ -135,6 +135,7 @@ func (m *MP3) SingleDownload() error {
 	}
 
 	bar.Finish()
+	logger.Info.Printf("Download complete: %s  \t File Path: %s", m.FileName, m.SavePath)
 	return nil
 }
 
