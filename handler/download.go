@@ -26,7 +26,6 @@ func SingleDownload(mp3List []*common.MP3) {
 			_ = os.Remove(filepath.Join(m.SavePath, m.FileName))
 			continue
 		}
-		logger.Info.Print("Download complete")
 		success++
 
 		wg.Add(1)

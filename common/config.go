@@ -21,7 +21,7 @@ func init() {
 	if err != nil {
 		homedir = "."
 	}
-	downloadDir := filepath.Join(homedir, "Music-Get")
+	downloadDir := filepath.Join(homedir, "Music")
 	flag.StringVar(&MP3DownloadDir, "o", downloadDir, "MP3 download directory")
 	flag.IntVar(&MP3DownloadBr, "br", 128, "MP3 prior download bit rate, 128|192|320")
 	flag.IntVar(&MP3ConcurrentDownloadTasksNumber, "n", 1, "MP3 concurrent download tasks number, max 16")
