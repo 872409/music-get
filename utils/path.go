@@ -20,7 +20,7 @@ func ExistsPath(path string) (bool, error) {
 func BuildPathIfNotExist(path string) error {
 	ok, err := ExistsPath(path)
 	if !ok {
-		return os.MkdirAll(path, 0644)
+		return os.MkdirAll(path, 0744)
 	}
 	return err
 }
